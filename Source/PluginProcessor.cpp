@@ -32,7 +32,7 @@ HelloSamplerAudioProcessor::HelloSamplerAudioProcessor()
 
     magicState.addTrigger("loadFile", [this]() { loadFile(); });
 
-    addParameter(knob1 = new AudioParameterFloat("knob1", "Knob 1", 0.0f, 2.0f, 1.0f));
+    addParameter(knob1 = new AudioParameterFloat(ParameterID { "knob1",  1 }, "Knob 1", 0.0f, 2.0f, 1.0f));
 
 }
 
