@@ -2,8 +2,12 @@
 
 <JUCERPROJECT id="OXbRKX" name="HelloSampler" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1"
-              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn">
+              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              defines="FOLEYS_SHOW_GUI_EDITOR_PALLETTE=0">
   <MAINGROUP id="iYQPL4" name="HelloSampler">
+    <GROUP id="{00B520E2-0B7C-8B7F-E7B9-5E399D056443}" name="Assets">
+      <FILE id="pxufSi" name="magic.xml" compile="0" resource="1" file="magic.xml"/>
+    </GROUP>
     <GROUP id="{1BE18AC0-F66B-C054-D359-8D1DE23C16AE}" name="Source">
       <FILE id="xvZHHI" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>

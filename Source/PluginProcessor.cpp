@@ -26,11 +26,13 @@ HelloSamplerAudioProcessor::HelloSamplerAudioProcessor()
 
     FOLEYS_SET_SOURCE_PATH(__FILE__);
 
+    magicState.setGuiValueTree(BinaryData::magic_xml, BinaryData::magic_xmlSize);
+
     formatManager.registerBasicFormats();
 
     magicState.addTrigger("loadFile", [this]() { loadFile(); });
 
-    addParameter(knob1 = new AudioParameterFloat("knob1", "Knob 1", 0.0f, 1.0f, 0.5f));
+    addParameter(knob1 = new AudioParameterFloat("knob1", "Knob 1", 0.0f, 2.0f, 1.0f));
 
 }
 
